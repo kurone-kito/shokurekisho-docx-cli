@@ -30,3 +30,5 @@ rules:
 settings:
   import/resolver:
     node:
+    webpack:
+      config: webpack.config.ts
