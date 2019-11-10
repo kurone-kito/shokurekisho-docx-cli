@@ -39,8 +39,9 @@
   },
   "scripts": {
     "start": "webpack --watch",
-    "prepack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "webpack",
+    "shokurekisho": "dist/index.js",
     "lint": "eslint './**/*'"
   },
   "engines": {
