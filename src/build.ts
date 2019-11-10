@@ -18,7 +18,7 @@ export const build = async (src: string, dst = createDocxPath(src)) => {
 
 export default async (src: string, dst?: string) => {
   try {
-    const result = build(src, dst);
+    const result = await build(src, dst);
     if (result) {
       // eslint-disable-next-line no-console
       console.info(result);
