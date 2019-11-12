@@ -1,6 +1,6 @@
 {
   "name": "@kurone-kito/shokurekisho-docx-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON Resume",
   "author": "kurone-kito",
   "license": "MIT",
@@ -39,22 +39,23 @@
   },
   "scripts": {
     "start": "webpack --watch",
-    "prepack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "webpack",
+    "shokurekisho": "dist/index.js",
     "lint": "eslint './**/*'"
   },
   "engines": {
     "node": ">=8.16"
   },
   "dependencies": {
-    "@kurone-kito/jsonresume-theme-japanese-cv-style-docx": "^0.2.1",
-    "chalk": "^2.4.2",
-    "commander": "^3.0.2"
+    "@kurone-kito/jsonresume-theme-japanese-cv-style-docx": "^0.2.2",
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1"
   },
   "devDependencies": {
     "@types/webpack": "^4.39.8",
-    "@typescript-eslint/eslint-plugin": "^2.6.1",
-    "@typescript-eslint/parser": "^2.6.1",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.5.0",
@@ -62,9 +63,9 @@
     "eslint-loader": "^3.0.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
-    "prettier": "^1.18.2",
+    "prettier": "^1.19.1",
     "ts-loader": "^6.2.1",
-    "ts-node": "^8.4.1",
+    "ts-node": "^8.5.0",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
