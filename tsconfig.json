@@ -6,7 +6,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": false,
     "strict": true,
-    "target": "ES2017"
+    "target": "ES2019"
   },
   "exclude": ["node_modules", "index.js"]
 }

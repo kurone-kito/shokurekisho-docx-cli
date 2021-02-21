@@ -45,7 +45,7 @@
     "lint": "eslint './**/*'"
   },
   "engines": {
-    "node": ">=8.16"
+    "node": ">=12.20"
   },
   "dependencies": {
     "@kurone-kito/jsonresume-theme-japanese-cv-style-docx": "^0.2.2",
