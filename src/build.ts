@@ -16,7 +16,7 @@ export const build = async (src: string, dst = createDocxPath(src)) => {
   return dst;
 };
 
-export default async (src: string, dst?: string) => {
+export default async (src: string, dst?: string): Promise<void> => {
   try {
     const result = await build(src, dst);
     if (result) {
