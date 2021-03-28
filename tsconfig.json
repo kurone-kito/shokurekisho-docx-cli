@@ -8,5 +8,6 @@
     "strict": true,
     "target": "ES2019"
   },
-  "exclude": ["node_modules", "index.js"]
+  "exclude": ["node_modules", "index.js"],
+  "include": ["."]
 }
