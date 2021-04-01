@@ -1,3 +1,4 @@
+import ESLintPlugin from 'eslint-webpack-plugin';
 import fs from 'fs';
 import path from 'path';
 import webpack from 'webpack';
@@ -6,22 +7,12 @@ import { dependencies, name } from './package.json';
 
 const distDir = path.resolve(__dirname, 'dist');
 
-export default (): webpack.Configuration => ({
+export default <webpack.Configuration>{
   cache: true,
   devtool: false,
   externals: [/json/, ...Object.keys(dependencies || {})],
   mode: 'production',
-  module: {
-    rules: [
-      { test: /\.tsx?$/, use: 'ts-loader' },
-      {
-        test: /\.tsx?$/,
-        enforce: 'pre',
-        loader: 'eslint-loader',
-        options: { configFile: '.eslintrc.yml' },
-      },
-    ],
-  },
+  module: { rules: [{ test: /\.tsx?$/, use: 'ts-loader' }] },
   output: {
     filename: 'index.js',
     library: name,
@@ -29,6 +20,7 @@ export default (): webpack.Configuration => ({
     path: distDir,
   },
   plugins: [
+    new ESLintPlugin({}),
     new webpack.BannerPlugin({ banner: '#!/usr/bin/env node', raw: true }),
     new WebpackShellPluginNext({
       onBuildExit: {
@@ -38,8 +30,6 @@ export default (): webpack.Configuration => ({
       },
     }),
   ],
-  resolve: {
-    extensions: ['.js', '.json', '.ts', '.tsx'],
-  },
+  resolve: { extensions: ['.js', '.json', '.ts'] },
   target: 'node',
-});
+};
