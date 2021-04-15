@@ -48,7 +48,7 @@
     "node": ">=12.20"
   },
   "dependencies": {
-    "@kurone-kito/jsonresume-theme-japanese-cv-style-docx": "^1.0.1",
+    "@kurone-kito/jsonresume-theme-japanese-cv-style-docx": "^2.0.0",
     "chalk": "^4.1.0",
     "commander": "^7.2.0"
   },
@@ -62,7 +62,7 @@
     "eslint-config-prettier": "^8.2.0",
     "eslint-import-resolver-webpack": "^0.13.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-webpack-plugin": "^2.5.3",
     "prettier": "^2.2.1",
     "ts-loader": "^8.1.0",
