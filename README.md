@@ -7,22 +7,22 @@ Generate a Word docx file of Japanese-style resume (職務経歴書) from JSON R
 
 ## Requires
 
-Node.js &gt;= v13 (**Strongly recommended**)
+Node.js &gt;= v14 (**Strongly recommended**)
 
 or
 
-Node.js &gt;= v8.10 and &lt; v13, and a [latest `full-icu` package](https://github.com/unicode-org/full-icu-npm)
+Node.js &gt;= v12 and &lt; v14, and a [latest `full-icu` package](https://github.com/unicode-org/full-icu-npm)
 
 ## Usage
 
-### on Node.js &gt;= v13
+### on Node.js &gt;= v14 (**Strongly recommended**)
 
 ```sh
 npm install --global @kurone-kito/shokurekisho-docx-cli
 shokurekisho build resume.json resume.docx
 ```
 
-### on Node.js &gt;= v8.10 and &lt; v13
+### on Node.js &gt;= v12 and &lt; v14
 
 ```sh
 npm install --global @kurone-kito/shokurekisho-docx-cli full-icu
