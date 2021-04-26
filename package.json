@@ -41,6 +41,7 @@
     "start": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepack": "webpack",
+    "prepare": "husky install",
     "shokurekisho": "dist/index.js",
     "lint": "eslint './**/*'"
   },
